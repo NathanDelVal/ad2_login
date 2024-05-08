@@ -1,0 +1,23 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+tr th:first-child, tr th:nth-child(2), tr th:last-child {
+    width: 30%;
+}
+
+
+tr th:nth-child(3) {
+    width: 10%;
+}
+
+tr td:first-child, tr td:nth-child(2), tr td:last-child {
+    width: 30%;
+}
+
+tr td:nth-child(3) {
+    width: 10%;
+}
