@@ -11,7 +11,7 @@ if ($_COOKIE['isLogged']) {
 }
 
 if(!empty($_POST)) {
-    var_dump($_POST);
+    
     if($_POST['submit'] == 'Editar') {
         $query = "UPDATE users SET nome = '{$_POST['nome']}', email = '{$_POST['email']}', blocked = {$_POST['blocked']} WHERE email = '{$_POST['formName']}'";
         if($conn->query($query) === FALSE) {
